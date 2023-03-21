@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
 
 //TODO: ROUTE TO GET SINGLE THOUGHT BASED ON THOUGHT ID
 router.get("/:Id", (req, res) => {
-  const id = req.params.id;
+  const id = req.params.Id;
 
   Thought.findById(id, (err, thought) => {
     if (err) {
